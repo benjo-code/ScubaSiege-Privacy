@@ -6,7 +6,7 @@ title: Scuba Siege – Datenschutz / Privacy
 
 ## Deutsch
 
-**Stand:** 2026-10-16 · Diese Erklärung gilt für das Spiel „Scuba Siege“ (Benjo Games).
+**Stand:** 2026-10-23 · Diese Erklärung gilt für das Spiel „Scuba Siege“ (Benjo Games).
 
 ### Wer ist verantwortlich?
 
@@ -20,13 +20,14 @@ Benjamin Bayer, Im Wöhrlet 20, 91227 Leinburg, E-Mail: <code.benjo@gmail.com>
 - **Spielername.** Für Bestenlisten und Freunde hat jeder Spieler einen Spielernamen der Form `Name#1234`. Ihn vergibt Unity (Authentication) automatisch; das Spiel übernimmt keine E-Mail-Adresse und keinen Klarnamen aus deiner Anmeldung als Namen. Du kannst den Namen im Spiel ändern (Hauptmenü → Friends → „Change name“). Der Spielername ist für andere Spieler sichtbar; wähle keinen Namen, der dich identifiziert, wenn du das nicht möchtest.
 - **Bestenlisten.** Verbessert ein Lauf deine Bestleistung einer Schwierigkeitsstufe, sendet das Spiel das Ergebnis (Schwierigkeitsstufe, erreichte Wellen, verbleibende Hülle und der Zeitpunkt der Meldung) zusammen mit deinem Spielernamen und deiner Spieler-ID an die Bestenliste dieser Stufe bei **Unity Leaderboards** (Unity Technologies). Die Bestenlisten sind **öffentlich**: Jeder Spieler des Spiels kann deinen Spielernamen und dein Ergebnis dort sehen. Ergebnisse, die sich nicht senden ließen (zum Beispiel ohne Internet), merkt sich das Spiel in `save.json` und sendet sie später; bei der ersten Anmeldung sendet es auch deine schon vorhandenen Bestleistungen. Mit dem Schalter „Show my scores“ (Hauptmenü → Leaderboards, „Show my scores: On/Off“) kannst du dich jederzeit ausblenden: Bei „Off“ sendet das Spiel nichts mehr und löscht deine Bestenlisten-Einträge; lässt sich das gerade nicht erledigen (zum Beispiel ohne Internetverbindung), bleiben die Einträge sichtbar, bis das Spiel sie löschen kann, sobald du wieder online und angemeldet bist; bei „On“ sendet es deine lokalen Bestleistungen wieder.
 - **Keine Fälschungssicherheit.** Das Spiel sendet die Ergebnisse selbst und prüft vorher nur, ob die Werte plausibel sind. Die Ergebnisse werden nicht serverseitig geprüft und können gefälscht sein; ein Platz in der Bestenliste ist deshalb kein Beweis für ein tatsächlich gespieltes Ergebnis.
-- **Freunde und Anwesenheit.** Unter Hauptmenü → Friends kannst du anderen Spielern anhand ihres vollen Spielernamens (`Name#1234`) eine Freundschaftsanfrage senden, Anfragen annehmen oder ablehnen und Freunde entfernen. Freundesliste, offene Anfragen und deine Anwesenheit verarbeitet **Unity Friends** (Unity Technologies). Deine Freunde sehen deine Anwesenheit („Online“ im Hauptmenü, „In game“ in einem Lauf, sonst offline); eine Anfrage zeigt dem Empfänger deinen Spielernamen.
-- **Bei Unity.** Unity verarbeitet Konto, Anmeldung, Cloud Save, Bestenlisten, Freundesliste und Anwesenheit nach eigener Datenschutzerklärung (<https://unity.com/legal/privacy-policy>). Dabei können technische Daten wie IP-Adresse und Gerätekennung anfallen. Unity kann Daten auch außerhalb der EU verarbeiten (zum Beispiel in den USA); Näheres steht in Unitys Erklärung. Das Löschen von Bestenlisten-Einträgen läuft über ein Skript bei **Unity Cloud Code**, weil Unity dafür keine Funktion im Spiel selbst anbietet.
-- Das Spiel selbst enthält **keine Werbung, keine Analyse und keine Weitergabe** deiner Daten an Dritte außer an Unity für die Anmeldung, für Cloud Save, für Bestenlisten und für Freunde. Was in den öffentlichen Bestenlisten steht, sehen alle Spieler (siehe oben).
+- **Freunde und Anwesenheit.** Unter Hauptmenü → Friends kannst du anderen Spielern anhand ihres vollen Spielernamens (`Name#1234`) eine Freundschaftsanfrage senden, Anfragen annehmen oder ablehnen und Freunde entfernen. Freundesliste, offene Anfragen und deine Anwesenheit verarbeitet **Unity Friends** (Unity Technologies). Deine Freunde sehen deine Anwesenheit („Online“ im Hauptmenü, „In game“ in einem Lauf, sonst offline); eine Anfrage zeigt dem Empfänger deinen Spielernamen. Lädst du einen Freund in eine Koop-Partie ein, sendet das Spiel ihm über Unity Friends eine Nachricht mit der Kennung und dem Code deiner Lobby; eine solche Nachricht kann nur ein Freund erhalten.
+- **Koop (Lobby und Relay).** Im Koop-Modus (Hauptmenü → Co-op) legt der Host bei **Unity Lobby** (Unity Technologies) eine private Lobby an, in der die Spieler-IDs der Teilnehmer und ein Verbindungscode für das Relay stehen; Mitspieler treten mit dem Code der Lobby oder über eine Einladung bei. Die Lobby wird gelöscht, wenn der Host sie verlässt; endet das Spiel unerwartet, läuft sie bei Unity nach kurzer Zeit von selbst ab. Die Spielverbindung läuft über **Unity Relay** (Unity Technologies); das Spiel tauscht keine IP-Adressen zwischen Mitspielern aus. Über die Verbindung gehen dein Spielername, deine Befehle (zum Beispiel Türme platzieren, aufrüsten, verkaufen) und der Spielzustand an die Mitspieler; sie sehen deinen Spielernamen. Das Spiel speichert davon nichts. Koop-Partien zählen weder für Bestleistungen noch für Bestenlisten.
+- **Bei Unity.** Unity verarbeitet Konto, Anmeldung, Cloud Save, Bestenlisten, Freundesliste, Anwesenheit, Lobby und Relay nach eigener Datenschutzerklärung (<https://unity.com/legal/privacy-policy>). Dabei können technische Daten wie IP-Adresse und Gerätekennung anfallen; das Relay sieht die IP-Adressen der Verbindungen, die über es laufen. Unity kann Daten auch außerhalb der EU verarbeiten (zum Beispiel in den USA); Näheres steht in Unitys Erklärung. Das Löschen von Bestenlisten-Einträgen läuft über ein Skript bei **Unity Cloud Code**, weil Unity dafür keine Funktion im Spiel selbst anbietet.
+- Das Spiel selbst enthält **keine Werbung, keine Analyse und keine Weitergabe** deiner Daten an Dritte außer an Unity für die Anmeldung, für Cloud Save, für Bestenlisten, für Freunde und für den Koop. Was in den öffentlichen Bestenlisten steht, sehen alle Spieler (siehe oben).
 
 ### Wozu und auf welcher Grundlage?
 
-Die Daten werden verarbeitet, um dir das Spiel mit Konto, Bestenlisten und Freunden bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO).
+Die Daten werden verarbeitet, um dir das Spiel mit Konto, Bestenlisten, Freunden und Koop bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO).
 
 ### Wie lange werden sie gespeichert?
 
@@ -42,11 +43,11 @@ Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Vera
 
 ### Änderungen
 
-Wir passen diese Erklärung an, wenn sich das Spiel ändert (etwa mit Mehrspieler). Die jeweils gültige Fassung steht auf dieser Seite.
+Wir passen diese Erklärung an, wenn sich das Spiel ändert (etwa mit neuen Online-Funktionen). Die jeweils gültige Fassung steht auf dieser Seite.
 
 ## English
 
-**Version:** 2026-10-16 · This policy applies to the game "Scuba Siege" (Benjo Games).
+**Version:** 2026-10-23 · This policy applies to the game "Scuba Siege" (Benjo Games).
 
 ### Who is responsible?
 
@@ -60,13 +61,14 @@ Benjamin Bayer, Im Wöhrlet 20, 91227 Leinburg, e-mail: <code.benjo@gmail.com>
 - **Player name.** For leaderboards and friends every player has a player name of the form `Name#1234`. Unity (Authentication) assigns it automatically; the game does not take an e-mail address or a real name from your sign-in as the name. You can change the name in the game (main menu → Friends → "Change name"). The player name is visible to other players; if you do not want to be identifiable, do not choose a name that identifies you.
 - **Leaderboards.** When a run improves your best result for a difficulty, the game sends the result (difficulty, waves reached, hull left and the time of the submission) together with your player name and player ID to the leaderboard of that difficulty at **Unity Leaderboards** (Unity Technologies). The leaderboards are **public**: every player of the game can see your player name and your result there. Results that could not be sent (for example without internet) are kept in `save.json` and sent later; at the first sign-in the game also sends your existing best results. With the switch "Show my scores" (main menu → Leaderboards, "Show my scores: On/Off") you can hide yourself at any time: with "Off" the game stops sending and deletes your leaderboard entries; if deleting is not possible at the moment (for example without an internet connection), the entries stay visible until the game can remove them once you are online and signed in again; with "On" it sends your local best results again.
 - **No protection against forged results.** The game sends the results itself and only checks beforehand that the values are plausible. Results are not verified on a server and may be forged; a place on a leaderboard is therefore no proof of a result that was actually played.
-- **Friends and presence.** Under main menu → Friends you can send a friend request to other players by their full player name (`Name#1234`), accept or decline requests and remove friends. The friends list, open requests and your presence are processed by **Unity Friends** (Unity Technologies). Your friends see your presence ("Online" in the main menu, "In game" during a run, otherwise offline); a request shows your player name to the recipient.
-- **At Unity.** Unity processes the account, sign-in, Cloud Save, leaderboards, friends list and presence under its own privacy policy (<https://unity.com/legal/privacy-policy>). Technical data such as the IP address and a device identifier can occur. Unity may also process data outside the EU (for example in the USA); see Unity's policy for details. Deleting leaderboard entries runs through a script at **Unity Cloud Code**, because Unity offers no function for it in the game itself.
-- The game itself contains **no advertising, no analytics and no disclosure** of your data to third parties except to Unity for signing in, for Cloud Save, for leaderboards and for friends. What is on the public leaderboards is visible to all players (see above).
+- **Friends and presence.** Under main menu → Friends you can send a friend request to other players by their full player name (`Name#1234`), accept or decline requests and remove friends. The friends list, open requests and your presence are processed by **Unity Friends** (Unity Technologies). Your friends see your presence ("Online" in the main menu, "In game" during a run, otherwise offline); a request shows your player name to the recipient. If you invite a friend to a co-op run, the game sends them a message through Unity Friends with the ID and the code of your lobby; only a friend can receive such a message.
+- **Co-op (lobby and relay).** In co-op mode (main menu → Co-op) the host creates a private lobby at **Unity Lobby** (Unity Technologies) that holds the player IDs of the participants and a connection code for the relay; other players join with the lobby code or through an invitation. The lobby is deleted when the host leaves it; if the game ends unexpectedly, it expires at Unity after a short time. The game connection runs through **Unity Relay** (Unity Technologies); the game does not exchange IP addresses between players. Your player name, your commands (for example placing, upgrading and selling towers) and the game state go to the other players through the connection; they see your player name. The game stores none of this. Co-op runs count neither for best results nor for leaderboards.
+- **At Unity.** Unity processes the account, sign-in, Cloud Save, leaderboards, friends list, presence, lobby and relay under its own privacy policy (<https://unity.com/legal/privacy-policy>). Technical data such as the IP address and a device identifier can occur; the relay sees the IP addresses of the connections that run through it. Unity may also process data outside the EU (for example in the USA); see Unity's policy for details. Deleting leaderboard entries runs through a script at **Unity Cloud Code**, because Unity offers no function for it in the game itself.
+- The game itself contains **no advertising, no analytics and no disclosure** of your data to third parties except to Unity for signing in, for Cloud Save, for leaderboards, for friends and for co-op. What is on the public leaderboards is visible to all players (see above).
 
 ### Why and on what basis?
 
-The data is processed to provide you with the game with an account, leaderboards and friends (Art. 6(1)(b) GDPR).
+The data is processed to provide you with the game with an account, leaderboards, friends and co-op (Art. 6(1)(b) GDPR).
 
 ### How long is it stored?
 
@@ -82,4 +84,4 @@ You have the right of access, rectification, erasure, restriction of processing,
 
 ### Changes
 
-We update this policy when the game changes (for example with multiplayer). The current version is always on this page.
+We update this policy when the game changes (for example with new online features). The current version is always on this page.
